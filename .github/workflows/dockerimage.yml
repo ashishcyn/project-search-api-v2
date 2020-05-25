@@ -21,9 +21,9 @@ jobs:
       uses: stCarolas/setup-maven@v3
       with:
         maven-version: 3.5.4     
-    - uses: actions/checkout@v2
-    - name: Maven build
-      run: mvn clean install
+    #- uses: actions/checkout@v2
+    #- name: Maven build
+    #  run: mvn clean install
     #- name: Build the Docker image
       # run: docker build . --file Dockerfile --tag ashish-image-name:$(date +%s)
     - uses: actions/checkout@v1
