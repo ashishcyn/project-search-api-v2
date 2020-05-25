@@ -6,3 +6,10 @@ Project Search Api-v2
 
 ![Docker Image CI](https://github.com/ashishcyn/project-search-api-v2/workflows/Docker%20Image%20CI/badge.svg)
 ![Release](https://github.com/ashishcyn/project-search-api-v2/workflows/Release/badge.svg)
+
+
+
+
+**Setup**   
+docker pull c2nashish/ashish-image:latest   
+docker run --publish 80:80 --detach  c2nashish/ashish-image:latest   
