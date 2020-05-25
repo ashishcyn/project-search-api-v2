@@ -37,11 +37,11 @@ jobs:
     - name: Build the tagged Docker image
       run: docker build . --file Dockerfile --tag ashish-image:${{steps.vars.outputs.tag}}
     - name: Push the tagged Docker image
-      run: docker push ashish-image:${{steps.vars.outputs.tag}}
+      run: docker push c2nashish/ashish-image:${{steps.vars.outputs.tag}}
     - name: Build the latest Docker image
       run: docker build . --file Dockerfile --tag ashish-image:latest
     - name: Push the latest Docker image
-      run: docker push ashish-image:latest
+      run: docker push c2nashish/ashish-image:latest
       
   sonar:
       name: Test - SonarCloud Scan
